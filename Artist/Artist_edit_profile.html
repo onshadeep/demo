@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="Agora42, 42, aGora42, agoRa42, Architech agora42, artist agora42, agora42 company, agora42 art, agOra42">
+  <link rel="shortcut icon" href="../img/output-onlinepngtools.png">
+
+  <title>Form Validation | Creative - Bootstrap 3 Responsive Admin Template</title>
+
+  <!-- Bootstrap CSS -->
+
+  <!-- bootstrap theme -->
+  <link href="../css/bootstrap-theme2.css" rel="stylesheet">
+  <!--external css-->
+  <!-- font icon -->
+  <link href="../css/css/bootstrap.css" rel="stylesheet" type="text/css" />  
+  <link rel="stylesheet" href="../css/css/w3_2.css">
+  <link href="../css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles -->
+  <link href="../css/style2.css" rel="stylesheet">
+  <link href="../css/style-responsive.css" rel="stylesheet" />
+  <script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.js" type="text/javascript"></script> 
+<script src="../js/niceCountryInput.js"></script>   
+<script src="../js/countrypicker.js"></script> 
+<link rel="stylesheet" type="text/css" href="../css/niceCountryInput.css">
+<link href="../css/bootstrap-datepicker.css" rel="stylesheet" />
+
+
+</head>
+
+<body style="background-color: #f7f7f7;">
+ 
+
+  
+    <div class="container-fluid" id="navbar" > 
+        <header>      
+         <div class="navbar navbar-inverse" style="position: fixed; width: 100%;">
+          <div class="navbar-inner">
+            <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><img  style="width:100px; height:39px;" src="../images/img/avatar-mini2.jpg"></li>
+            </ul>
+            <form class="nav" style="left: 100px;" action="/action_page.php">
+              <div class="active">
+                <input type="text" class="form-control1" placeholder="Search" name="search">  
+               
+              </div>
+            </form>
+            <ul class="nav" style="left: 425px;">
+              <li><a href="#">Home</a></li>
+              <li><a href="">Notification</a></li>
+              <li><a href="">Username</a></li>
+            </ul>      
+            
+            <ul class="nav" style="margin-top: 0px; left: 400px; border-radius: 50%; padding-left: 0px;">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"> <img style="border-radius: 50%;"  src="../images/img/imgavatar1_small.jpg"></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Photo</a></li>
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Help topic</a></li>
+                <li><a href="#">Sign Out</a></li>
+                </ul>
+              </li>
+                </ul>
+            </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+          </div><!-- /.navbar-inner -->     
+        </div>
+        </header>
+      </div>
+
+  
+
+    <!--sidebar start-->
+    <aside>
+      
+      <div id="sidebar1a" class="nav-collapse ">
+
+          <div>
+              <h1 style="text-align: center; color: #ffffff;"><strong >Edit Profile</strong></h1>
+            </div>
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu">
+          <li class="sub-menu"><a href="#about"><span>About</span></a></li>
+          <li class="sub-menu"><a href="#wdu"><span >Where do you</span></span></a></li>
+          <li class="sub-menu"><a href="#contact" ><span>Contact and info</span></a></li>
+          <li class="sub-menu"><a href="#password" ><span>Change password </span></a></li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+
+
+      <div id="sidebar1b" class="nav-collapse ">
+          <!-- sidebar menu start-->
+          
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png"  alt="" style="border-radius: 50%;display: inline-block;margin-left: 60px;margin-top: 25px;">
+              <div class="mt-2" style="margin-left: 140px;margin-top: 20px;margin-bottom: 20px;">
+                  <span class="btn btn-primary">Upload</span>
+              </div>
+          
+          <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+
+    <!--main content start-->
+    <section id="main-content1a">
+      <!--about start-->
+      <section class="wrapper" id="about">        
+        <!-- Form validations -->
+        <div class="row1">
+          <div class="col-lg-12-1a" >
+            <section class="panel">
+              <header class="panel-heading">
+                  About
+              </header>
+              <div class="panel-body">
+                <div class="form">
+                  <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                    <div class="form-group ">
+                      <label for="inputname" class="control-label col-lg-2">Full Name</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputname" name="fullname"  minlength="5"  autofocus required />
+                      </div>
+                    </div>
+               
+                    
+                    <div class="form-group ">
+                      <label for="inputbiography" class="control-label col-lg-2">Biography</label>
+                      <div class="col-lg-10">
+                        <textarea class="form-control " id="inputBio"   minlength="15" autofocus required></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-offset-2 col-lg-10">
+                        <button class="btn btn-primary" type="submit">Update</button>
+                        <button class="btn btn-default" type="button">Cancel</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <section class="panel">
+                <header class="panel-heading">
+                    Work and Education
+                </header>
+                <div class="panel-body">
+                  <div class="form">
+                    <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                      <div class="form-group ">
+                        <label for="inputwork" class="control-label col-lg-2">Work </label>
+                        <div class="col-lg-10">
+                          <input class=" form-control" id="address" name="address" type="text" minlength="15" autofocus required />
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <label for="inputwork1" class="control-label col-lg-2">Worked places </label>
+                        <div class="col-lg-10">
+                          <input class=" form-control" id="address" name="address" type="text" minlength="15" />
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <label for="inputskills" class="control-label col-lg-2">Skills </label>
+                        <div class="col-lg-10">
+                          <input class="form-control " id="username"  type="text" minlength="15" />
+                        </div>
+                      </div>
+                   
+                        <header class="panel-heading">
+                          Education
+                        </header> 
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <div class="col-lg-11">
+                              <div class="form-group" style="margin-top: 15px;">
+                                <label for="inputunisch" class="control-label-b col-lg-2">High School&nbsp/&nbsp10th  </label>
+                                <input class="form-control " id="address" name="address" minlength="15" autofocus required />                      
+                              </div> 
+                            </div> 
+                            <div class="col-lg-1">
+                              <div class="form-group" style="margin-top: 15px;">
+                                <label for="inputunisch" class="control-label-b col-lg-1">%&nbsp/&nbspCGPA</label>
+                                <input class="form-control " id="address" name="address" minlength="15" autofocus required />                              
+                              </div> 
+                            </div> 
+                          </div>
+                          <div class="row">
+                              <div class="col-lg-11">
+                                <div class="form-group">
+                                  <label for="inputunisch" class="control-label-b col-lg-2">Intermediate&nbsp/&nbsp12th  </label>
+                                  <input class="form-control " id="address" name="address" minlength="15" autofocus required />                      
+                                </div> 
+                              </div> 
+                              <div class="col-lg-1">
+                                <div class="form-group">
+                                  <label for="inputunisch" class="control-label-b col-lg-1">%&nbsp/&nbspCGPA</label>
+                                  <input class="form-control " id="address" name="address" minlength="15" autofocus required />                              
+                                </div> 
+                              </div> 
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-11">
+                                  <div class="form-group">
+                                    <label for="inputunisch" class="control-label-b col-lg-2">Under Graduation</label>
+                                    <input class="form-control " id="address" name="address" minlength="15" autofocus required />                      
+                                  </div> 
+                                </div> 
+                                <div class="col-lg-1">
+                                  <div class="form-group">
+                                    <label for="inputunisch" class="control-label-b col-lg-1">%&nbsp/&nbspCGPA</label>
+                                    <input class="form-control " id="address" name="address" minlength="15" autofocus required />                              
+                                  </div> 
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-11">
+                                  <div class="form-group">
+                                    <label for="inputunisch" class="control-label-b col-lg-2">Post Graduation</label>
+                                    <input class="form-control " id="address" name="address" minlength="15" autofocus required />                      
+                                  </div> 
+                                </div> 
+                                <div class="col-lg-1">
+                                  <div class="form-group" style="">
+                                    <label for="inputunisch" class="control-label-b col-lg-1">%&nbsp/&nbspCGPA</label>
+                                    <input class="form-control " id="address" name="address" minlength="15" autofocus required />                              
+                                  </div> 
+                                </div> 
+                            </div>
+                            <div class="row" >
+                                <div class="col-lg-12">
+                                  <div class="form-group" style="margin-top: 15px;">
+                                    <label for="inputunisch" class="control-label col-lg-2">Currently U/C/S/Office</label>
+                                    <div class="col-lg-10">
+                                        <input class="form-control " id="address" name="address" minlength="15" autofocus required/>
+                                      </div>                      
+                                  </div> 
+                                </div>
+                              </div>
+                              <div class="form-group" style="margin-top: 15px;">
+                                  <div class="col-lg-offset-2 col-lg-10">
+                                  <button class="btn btn-primary" type="submit">Update</button>
+                                  <button class="btn btn-default" type="button">Cancel</button>
+                                  </div>
+                              </div>
+                          </div>  
+                        </div>                                                                                      
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        <!-- page end-->
+      </section>
+    </section>
+
+ 
+
+    <section id="main-content1a">
+      <section class="wrapper" id="wdu">        
+          <!-- Form validations -->
+          <div class="row1">
+            <div class="col-lg-12-1a">
+              <section class="panel">
+                <header class="panel-heading">
+                    Where do you live
+                </header>
+                <div class="panel-body">
+                  <div class="form">
+                    <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                      <div class="form-group ">
+                        <label for="inputCountry" class="control-label col-lg-2">Country</label>
+                        <div class="col-lg-10">
+                          <div class="niceCountryInputSelector"  style="width: 100%;" data-selectedcountry="US" data-showspecial="false" data-showflags="true" data-i18nall="All selected"
+                          data-i18nnofilter="No selection" data-i18nfilter="Filter" data-onchangecallback="onChangeCallback" autofocus required>
+                         </div>
+                        </div>
+                      </div>                                     
+                      <div class="form-group ">
+                          <label for="inputCity" class="control-label col-lg-2">City</label>
+                          <div class="col-lg-10">
+                            <input type="text" class="form-control" id="address" name="address"  minlength="5"   autofocus required />
+                          </div>
+                        </div>
+                      <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                          <button class="btn btn-primary" type="submit">Update</button>
+                          <button class="btn btn-default" type="button">Cancel</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+  
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <section class="panel">
+                <header class="panel-heading">
+                    Where do you have lived
+                </header>
+                <div class="panel-body">
+                  <div class="form">
+                    <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                        <div class="form-group ">
+                            <label for="inputCountry" class="control-label col-lg-2">Country</label>
+                            <div class="col-lg-10">
+                              <div class="niceCountryInputSelector"  style="width: 100%;" data-selectedcountry="US" data-showspecial="false" data-showflags="true" data-i18nall="All selected"
+                              data-i18nnofilter="No selection" data-i18nfilter="Filter" data-onchangecallback="onChangeCallback" >
+                             </div>
+                            </div>
+                          </div>                                     
+                          <div class="form-group ">
+                              <label for="inputCity" class="control-label col-lg-2">City</label>
+                              <div class="col-lg-10">
+                                <input type="text" class="form-control" id="address" name="address"  minlength="5"    />
+                              </div>
+                            </div>                                                                                            
+                       <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                          <button class="btn btn-primary" type="submit">Update</button>
+                          <button class="btn btn-default" type="button">Cancel</button>
+                        </div>
+                      </div>
+                    </form>
+
+                    <button class="collapsible">Add more</button>
+                    <div class="content" style="margin-top: 20px;">
+                       <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                           <div class="form-group ">
+                               <label for="inputCountry" class="control-label col-lg-2">Country</label>
+                               <div class="col-lg-10">
+                                 <div class="niceCountryInputSelector"  style="width: 100%;" data-selectedcountry="US" data-showspecial="false" data-showflags="true" data-i18nall="All selected"
+                                 data-i18nnofilter="No selection" data-i18nfilter="Filter" data-onchangecallback="onChangeCallback" >
+                                </div>
+                               </div>
+                             </div>                                     
+                             <div class="form-group ">
+                                 <label for="inputCity" class="control-label col-lg-2">City</label>
+                                 <div class="col-lg-10">
+                                   <input type="text" class="form-control" id="address" name="address"  minlength="5"    />
+                                 </div>
+                               </div>                                                                                            
+                          <div class="form-group">
+                           <div class="col-lg-offset-2 col-lg-10">
+                             <button class="btn btn-primary" type="submit">Update</button>
+                             <button class="btn btn-default" type="button">Cancel</button>
+                           </div>
+                         </div>
+                       </form>
+                   </div>
+
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- page end-->
+        </section>
+    </section>
+    
+
+    
+    <section id="main-content1a">
+        <section class="wrapper" id="contact">        
+            <!-- Form validations -->
+            <div class="row1">
+              <div class="col-lg-12-1a">
+                <section class="panel">
+                  <header class="panel-heading">
+                      Contact
+                  </header>
+                  <div class="panel-body">
+                    <div class="form">
+                      <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                        <div class="form-group ">
+                          <label for="inputMobileNumber" class="control-label col-lg-2">Mobile Number</label>
+                          <div class="col-lg-10">
+                            <input type="text" class="form-control" id="inputNumber"  autofocus required />
+                          </div>
+                        </div>                                     
+                   
+                        <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-10">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                            <button class="btn btn-default" type="button">Cancel</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+    
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <section class="panel">
+                  <header class="panel-heading">
+                      Basic information
+                  </header>
+                  <div class="panel-body">
+                    <div class="form">
+                      <form class="form-validate form-horizontal " id="register_form" method="get" action="">                                   
+                          <div class="form-group ">
+                              <label for="inputgender" class="control-label col-lg-2">Gender</label>
+                              <div class="col-lg-10">
+                                <input type="text" class="form-control"  id="inputgender"  pattern="^(?:M|male|Male|MALE|F|female|Female|FEMALE|O|other|Other|OTHER)$" autofocus required />
+                              </div>
+                          </div>    
+                          <div class="form-group ">
+                               <label for="inputlanguage" class="control-label col-lg-2">Language</label>
+                               <div class="col-lg-10">
+                                 <input type="text" class="form-control" id="inputlanguage" minlength="4" />
+                               </div>
+                           </div>
+                           <div class="form-group ">
+                               <label for="inputmail" class="control-label col-lg-2">Mail</label>
+                               <div class="col-lg-10">
+                                 <input type="text" class="form-control" id="inputmail" pattern="^([a-z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-z0-9\-]+\.)+))([a-z]{2,4}|[0-9]{1,3})(\]?)$" />
+                               </div>
+                            </div>
+                            <div class="form-group ">
+                               <label for="inputlinkorwebsite" class="control-label col-lg-2">Social link</label>
+                               <div class="col-lg-10">
+                                 <input type="text" class="form-control" id="inputlinkorwebsite" pattern="^((http[s]?|ftp):\/)?\/?([^:\/\s]+)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)(.*)?(#[\w\-]+)?$" />
+                               </div>
+                            </div>    
+                            <div class="form-group ">
+                              <label for="inputwebsite" class="control-label col-lg-2">Website</label>
+                              <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputwebsite" pattern="^((http[s]?|ftp):\/)?\/?([^:\/\s]+)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)(.*)?(#[\w\-]+)?$" />
+                              </div>
+                           </div> 
+                             <div class="form-group ">
+                                <label for="inputlifeevent" class="control-label col-lg-2">Life event</label>
+                                <div class="col-lg-10">
+                                  <input type="text" class="form-control" id="inputlifeevent" minlength="5" />
+                                </div>
+                             </div>                                                                                            
+                         <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-10">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                            <button class="btn btn-default" type="button">Cancel</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- page end-->
+          </section>
+      </section>
+        
+
+
+        
+    <section id="main-content1a">
+        <section class="wrapper" id="password">        
+            <!-- Form validations -->
+            <div class="row">
+              <div class="col-lg-12">
+                <section class="panel">
+                  <header class="panel-heading">
+                      Password
+                  </header>
+                  <div class="panel-body">
+                    <div class="form">
+                      <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                        <div class="form-group ">
+                          <label for="inputPasswordCurrent" class="control-label col-lg-2">Current password</label>
+                          <div class="col-lg-10">
+                            <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  autofocus required />
+                          </div>
+                        </div>  
+                        
+                        <div class="form-group ">
+                            <label for="inputPasswordNew" class="control-label col-lg-2">New password</label>
+                            <div class="col-lg-10">
+                              <input type="password" class="form-control" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  autofocus required />
+                            </div>
+                          </div> 
+
+                          <div class="form-group ">
+                              <label for="inputPasswordNew" class="control-label col-lg-2">Verify password</label>
+                              <div class="col-lg-10">
+                                <input type="password" class="form-control" id="confirm_psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  autofocus required />
+                              </div>
+                            </div> 
+                   
+                        <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-10">
+                            <button class="btn btn-primary" type="submit">Update</button>
+                            <button class="btn btn-default" type="button">Cancel</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+    
+                  </div>
+                </section>
+              </div>
+            </div>
+  
+            <!-- page end-->
+          </section>
+      </section>
+
+      <script src="../js/validation.js"></script>
+      <script src="../js/collapsible.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 40px;
+  padding-top: 5px;   
+  padding-bottom: 5px;   
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+  border-radius: 8px;
+}
+
+.column1 {
+  float: left;
+  width: 6%;
+  height: 80px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+}
+.column2 {
+  float: left;
+  width: 35%;
+  height: 65px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+}
+.column3 {
+  float: left;
+  width: 35%;
+  height: 80px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+}
+.column4 {
+  float: left;
+  width: 8%;
+  margin-top: 28px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+}
+
+.column3font{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.containerTab {
+  padding: 20px;
+  color: black;
+  border-radius: 8px;
+  display: none;
+}
+.responsive {
+ 
+  height: 65px;
+  margin-top: 10px;
+  border-radius: 8px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.numeric{
+    margin-top: 25px;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+.lead-shadow:hover{
+  height: 80px;
+  box-shadow: 2px 3px 4px 1px black;
+  border-radius: 8px;
+}
+.bg1d,.b1d{
+  background:#c2c2c2;
+}
+.bg1w,.b2w{
+  background:#d4d1d1;
+}
+.bg1m,.b3m{
+  background:rgb(229, 228, 228);
+}
+.bg1d:hover,
+.bg1w:hover, 
+.bg1m:hover{
+  box-shadow: -2px 0px #7c97ed;
+}
+.b1d:hover,
+.b2w:hover,
+.b3m:hover{
+  box-shadow: -1px 2px 0px 1px #b18584;
+}
+.dod{
+  border: 1px solid #efefeb;"
+}
+.dod:hover{
+  box-shadow: 0px 0px 2px 1px #fb6868;
+}
